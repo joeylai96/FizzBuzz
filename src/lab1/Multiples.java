@@ -8,10 +8,10 @@ public class Multiples {
 
     public static int multiples(int n,int a,int b) {
         int count=0;
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n;i++){
             boolean divisibleByA = i % a == 0;
             if (i % b == 0 || divisibleByA) {
-                count++;
+                count+=1;
             }
         }
         return count;
